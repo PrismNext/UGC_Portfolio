@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Italiana", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  /* Baby Pink, Lavender, Lilac & Beauty Glow Palette */
+  --color-canvas: #FCF9FA;
+  --color-canvas-card: #FFFFFF;
+  --color-pink-soft: #FDF2F7;
+  --color-pink-baby: #FCE7F3;
+  --color-pink-blush: #FBCFE8;
+  --color-pink-vibrant: #F472B6;
+  --color-pink-rose: #EC4899;
+  --color-pink-deep: #BE185D;
+  --color-pink-berry: #9D174D;
+
+  --color-lavender-soft: #F5F3FF;
+  --color-lavender-light: #EDE9FE;
+  --color-lavender-lilac: #DDD6FE;
+  --color-lavender-vibrant: #A78BFA;
+  --color-lavender-purple: #8B5CF6;
+  --color-lavender-deep: #6D28D9;
+
+  --color-peach-soft: #FFF7ED;
+  --color-peach-light: #FFEDD5;
+  --color-peach-warm: #FB923C;
+
+  --color-charcoal: #1E1B1E;
+  --color-charcoal-soft: #2D272E;
+  --color-charcoal-muted: #6B636D;
+}
+
+/* Base custom styles */
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FCF9FA;
+  color: #1E1B1E;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom editorial selection in soft baby pink */
+::selection {
+  background-color: #FBCFE8;
+  color: #831843;
+}
+
+/* Delicate scrollbar in soft lavender/rose */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FCF9FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #E9D5FF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F472B6;
+}
+
+/* Radiant glow & gradient utility classes */
+.bg-gradient-beauty {
+  background: linear-gradient(135deg, #F472B6 0%, #A855F7 100%);
+}
+
+.text-gradient-beauty {
+  background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-radial-pink {
+  background: radial-gradient(circle, rgba(251, 207, 232, 0.45) 0%, rgba(253, 242, 247, 0) 70%);
+}
+
+.bg-radial-lavender {
+  background: radial-gradient(circle, rgba(221, 214, 254, 0.45) 0%, rgba(245, 243, 255, 0) 70%);
+}
+
+/* Glassmorphism token for navbar with soft rosy glow */
+.glass-nav {
+  background: rgba(252, 249, 250, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
