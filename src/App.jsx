@@ -7,7 +7,6 @@ import Services from './components/Services';
 import WhyWorkWithMe from './components/WhyWorkWithMe';
 import Process from './components/Process';
 import About from './components/About';
-// import CollaborationCTA from './components/CollaborationCTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import VideoModal from './components/VideoModal';
